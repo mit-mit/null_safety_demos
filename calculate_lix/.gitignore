@@ -10,3 +10,4 @@ doc/api/
 
 # VSCode configuration
 .vscode/settings.json
+.vscode/launch.json
