@@ -1,0 +1,9 @@
+name: calculate_lix
+description: A library for calculating the lix readability index.
+version: 1.2.0
+
+environment:
+  sdk: '>=2.11.0 <3.0.0'
+
+dependencies:
+  collection: ^1.15.0-nullsafety
