@@ -3,6 +3,7 @@
 .packages
 build/
 doc/api/
+pubspec.lock
 
 # Android Studio configuration
 .idea/
