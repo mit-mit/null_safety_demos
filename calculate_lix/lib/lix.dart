@@ -27,12 +27,12 @@ class Lix {
 
   factory Lix.fromString(String text) {
     // Count periods: . : ; ! ?
-    var periods = (RegExp(r'[.:;!?]').allMatches(text).length);
+    final periods = (RegExp(r'[.:;!?]').allMatches(text).length);
 
     // Count words.
-    var allWords = text.split(RegExp(r'\W+'));
-    var words = allWords.length;
-    var longWords = allWords.where((w) => w.length > 6).toList().length;
+    final allWords = text.split(RegExp(r'\W+')).where((s) => s != '').toList();
+    final words = allWords.length;
+    final longWords = allWords.where((w) => w.length > 6).toList().length;
 
     return Lix(words: words, longWords: longWords, periods: periods);
   }
