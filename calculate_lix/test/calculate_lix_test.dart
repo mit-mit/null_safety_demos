@@ -1,6 +1,5 @@
+import 'package:calculate_lix/lix.dart';
 import 'package:test/test.dart';
-
-import '../lib/lix.dart';
 
 void main() {
   test('Fails with null', () {
