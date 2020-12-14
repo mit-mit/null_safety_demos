@@ -22,7 +22,7 @@ class Lix {
     this.longWords,
     this.periods,
   }) {
-    readability = this._calculate();
+    readability = _calculate();
   }
 
   factory Lix.fromString(String text) {
@@ -32,7 +32,7 @@ class Lix {
     // Count words.
     final allWords = text.split(RegExp(r'\W+')).where((s) => s != '').toList();
     final words = allWords.length;
-    final longWords = allWords.where((w) => w.length > 6).toList().length;
+    final longWords = allWords.where((w) => w.length > 6).length;
 
     return Lix(words: words, longWords: longWords, periods: periods);
   }
